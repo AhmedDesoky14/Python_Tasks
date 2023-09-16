@@ -2,8 +2,8 @@ import secrets
 import string
 import hashlib
 from getpass import getpass
-credentials_file_path = "/home/desoky/My_Files/Embedded Linux Course/1-Python/Python_Tasks/task2/credentials.txt" #Comment if not used
-#credentials_file_path = "./credentials.txt"
+#credentials_file_path = "/home/desoky/My_Files/Embedded Linux Course/1-Python/Python_Tasks/task2/credentials.txt" #Comment if not used
+credentials_file_path = "./credentials.txt"
 """**************************************************************************************************************************************************
 Function description:   Function used to generate random password
 Arguments:  length of the password, default value = 12
@@ -68,12 +68,6 @@ def authenicate_user(username,passwd):
                 return False
     file.close()
     return False
-"""**************************************************************************************************************************************************
-Function description:   Function to authenicate user login
-Arguments:  username
-Return: if yes return True, if not False
-**************************************************************************************************************************************************"""
-#def validate_input:
 """**************************************************************************************************************************************************
 Function description:   Function to register user
 Arguments:  NONE

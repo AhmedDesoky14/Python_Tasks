@@ -145,8 +145,6 @@ def change_passwd():
                 return
             new_passwd_hashed = Hash_passwd(new_passwd)
             file_data = file.read() #it reads empty why!!!
-            #changed_credentials = (f"{username} {new_passwd_hashed}")
-            #file_data = file_data + changed_credentials
             file_data = file_data.replace(f"{old_passwd_hashed}",f"{new_passwd_hashed}")
             file.close()
             file_iter.close()
